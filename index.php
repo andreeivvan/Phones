@@ -19,6 +19,7 @@ require_once 'connect.php';
         background-color: #ADD8E6;
     }
 </style>
+
 <body>
     <table>
         <tr>
