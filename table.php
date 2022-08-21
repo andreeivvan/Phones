@@ -49,7 +49,7 @@ require_once 'config/connect.php';
         ?>
  
     </table>
-    <a href="index.php">Добавления данных</a>
+    <a href="index.html">Добавления данных</a>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </body>
 </html>
