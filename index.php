@@ -1,50 +1,33 @@
-<?php
-require_once 'connect.php';
-?>
+
+
 
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Phones</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Телефоны</title>
 </head>
-<style>
-    th, td {
-        padding: 10px;
-    }
-    th {
-        background-color: #E0FFFF;
-    }
-    td {
-        background-color: #ADD8E6;
-    }
-</style>
+
 
 <body>
-    <table>
-        <tr>
-            <th>ID</th>
-            <th>Phone</th>
-            <th>Name</th>
-            <th>Data</th>
-        </tr>
-        <?php
-            $phones = mysqli_query($connect,"SELECT * FROM `phones`");
-            $phones = mysqli_fetch_all($phones);
-            foreach($phones as $phone) {
-                ?>
+    <!-- ввод данных в таблицы -->
+     <h1>Добавления нового телефона</h1>
+     <form id="phoneForm">
+        <p>Введите имя</p>
+        <input type="text" name="name" id="name">
+        <p>Введите телефон</p>
+        <input type="tel" name="tel" id="tel">
+        <p>Введите дату</p>
+        <input type="date" name="date" id="date">
+        <button type="submit" id="sendPhone">Сохранить</button>
+    </form>
+    <div id="errorMess">
 
-                <tr>
-                    <td><?= $phone[0]?></td>
-                    <td><?= $phone[1]?></td>
-                    <td><?= $phone[2]?></td>
-                    <td><?= $phone[3]?></td>
-                </tr>
-
-                <?php
-            }
-        ?>
-       
-    </table>
+    </div>
+    <a href="table.php">Таблица телефонов</a>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="js/formPhone.js"></script>
 </body>
 </html>
