@@ -8,23 +8,14 @@ require_once 'config/connect.php';
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
     <title>Телефоны</title>
 </head>
-<style>
-    th, td {
-        padding: 10px;
-    }
-    th {
-        background-color: #E0FFFF;
-    }
-    td {
-        background-color: #ADD8E6;
-    }
-</style>
+
 
 <body>
     <!-- вывод данных из таблицы -->
-    <table>
+    <table class="table contanier">
         <tr>
             <th>ID</th>
             <th>Phone</th>
@@ -36,7 +27,7 @@ require_once 'config/connect.php';
             $phones = mysqli_fetch_all($phones);
             foreach($phones as $phone) {
                 ?>
-
+                
                 <tr>
                     <td><?= $phone[0]?></td>
                     <td><?= $phone[1]?></td>
@@ -47,9 +38,9 @@ require_once 'config/connect.php';
                 <?php
             }
         ?>
- 
+
     </table>
-    <a href="index.php">Добавления данных</a>
+    <button type="submit" id="" onclick="document.location='index.php'" class="link__buttun contanier">Добавить телефон</button>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </body>
 </html>

@@ -32,8 +32,10 @@ $("#sendPhone").on("click", function() {
             if(!data)
                 alert("Были ошибки, данные не отправились!");
             else
+            alert("Телефон успешно добавлен!");
                 $("#phoneForm").trigger("reset");
             $("#sendPhone").prop("disabled", false);
+            
         }
         });
 })
