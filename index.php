@@ -34,6 +34,7 @@
      
 
     <button type="submit" id="" onclick="document.location='table.php'" class="link__buttun contanier">Таблица телефонов</button>
+    <button type="submit" id="" onclick="document.location='https://github.com/andreeivvan/phones'" class="link__buttun contanier">Посмотреть исходный код</button>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="js/formPhone.js"></script>
 </body>
