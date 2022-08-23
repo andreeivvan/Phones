@@ -28,7 +28,6 @@
             <input type="date" name="date" id="date" class="input">
             <button type="submit" id="sendPhone" class="button">Сохранить</button>
         </form>
-
     </div>
     <div id="errorMess" class="errorMess contanier"></div>
      

@@ -18,8 +18,8 @@ require_once 'config/connect.php';
     <table class="table contanier">
         <tr>
             <th>ID</th>
-            <th>Phone</th>
             <th>Name</th>
+            <th>Phone</th>
             <th>Data</th>
         </tr>
         <?php
